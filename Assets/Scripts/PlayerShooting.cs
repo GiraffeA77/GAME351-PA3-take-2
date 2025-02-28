@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
+    public Animator animator;
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float bulletSpeed = 20f;
@@ -14,6 +15,7 @@ public class PlayerShooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F) && Time.time >= nextFireTime)
         {
+            animator.SetTrigger("Aim");
             Shoot();
             nextFireTime = Time.time + 1f / fireRate;
         }
