@@ -2394,6 +2394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_TNT_Barrel_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1358722407381910, guid: a1ef1d012cb6db34b9666c8da15cf70a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 4193202784988228, guid: a1ef1d012cb6db34b9666c8da15cf70a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -37246,8 +37250,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276274265}
-  m_LocalRotation: {x: 0.13931496, y: 0.023738982, z: -0.0033397416, w: 0.9899579}
-  m_LocalPosition: {x: 4.378798, y: 2.4312284, z: 0.6381259}
+  m_LocalRotation: {x: 0.19062722, y: 0.49011508, z: -0.110788554, w: 0.84331155}
+  m_LocalPosition: {x: 36.117695, y: 1.47, z: 46.7268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43989,7 +43993,7 @@ GameObject:
   - component: {fileID: 1525358201}
   m_Layer: 0
   m_Name: Bandits
-  m_TagString: Untagged
+  m_TagString: Bandit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47428,7 +47432,7 @@ GameObject:
   - component: {fileID: 1635453728}
   m_Layer: 0
   m_Name: Dynamite
-  m_TagString: Untagged
+  m_TagString: Dynamite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

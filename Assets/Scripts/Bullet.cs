@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Barrel"))
+        if (collision.gameObject.CompareTag("Dynamite"))
         {
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Instantiate(debrisPrefab, transform.position, Quaternion.identity);
