@@ -21976,6 +21976,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1908370211}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &803449930 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95474626191974340, guid: 15a550206f811c346b37f3a3f4495178,
+    type: 3}
+  m_PrefabInstance: {fileID: 1908370211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &803449931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803449927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55652054645188c4982a41c2a7b8c4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 803449930}
+  kickForce: 10
+  kickRadius: 1.5
+  kickableLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1001 &803526468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47518,7 +47542,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -47646,7 +47670,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -47742,7 +47766,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
