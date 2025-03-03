@@ -30,7 +30,7 @@ public class SoundManager : MonoBehaviour
     private bool PlayerNearSupplyStore()
     {
         float distance = Vector3.Distance(player.transform.position, supplyStore.transform.position);
-        return distance < 10f; // Adjust range as needed
+        return distance < 30f; // Adjust range as needed
     }
 
     private bool PlayerIsShooting()

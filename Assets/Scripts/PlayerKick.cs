@@ -20,7 +20,7 @@ public class PlayerKick : MonoBehaviour
     void PerformKick()
     {
         int randomKick = Random.Range(0, 3);
-        animator.SetInteger("KickType", randomKick);
+        //animator.SetInteger("KickType", randomKick);
         animator.SetTrigger("Kick");
 
         Collider[] hitObjects = Physics.OverlapSphere(transform.position + transform.forward, kickRadius, kickableLayer);

@@ -10,12 +10,31 @@ public class PlayerShooting : MonoBehaviour
     public float bulletSpeed = 20f;
     public float fireRate = 1f;
     private float nextFireTime = 0f;
+    private bool isAiming = false;
 
     void Update()
     {
+        // Check if "Ctrl" key is pressed to enter aiming mode
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            isAiming = true;
+            animator.speed = 0f; // Pause the animation
+        }
+
+        // Check if "Ctrl" key is released to exit aiming mode
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            isAiming = false;
+            animator.speed = 1f; // Resume the animation
+        }
+
+        // Shooting logic
         if (Input.GetKeyDown(KeyCode.F) && Time.time >= nextFireTime)
         {
-            animator.SetTrigger("Aim");
+            if (!isAiming)
+            {
+                animator.SetTrigger("Aim");
+            }
             Shoot();
             nextFireTime = Time.time + 1f / fireRate;
         }
