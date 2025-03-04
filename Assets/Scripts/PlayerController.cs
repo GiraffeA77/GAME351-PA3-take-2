@@ -47,7 +47,5 @@ public class PlayerController : MonoBehaviour
             else
                 animController.SetBool("Crouch", false);
         }
-
-
     }
 }
