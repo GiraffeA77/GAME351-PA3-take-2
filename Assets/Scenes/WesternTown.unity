@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18145958, g: 0.22709076, b: 0.30739304, a: 1}
+  m_IndirectSpecularColor: {r: 0.18146001, g: 0.22709143, b: 0.3073942, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9674,6 +9674,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83a3f332d4b3e0245b9283e277e4ddec, type: 3}
+--- !u!1 &355398447 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1453898409058198, guid: ed2f947edb4f7a84eb4b7f095fd00a3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1221085807}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &357656872
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38020,8 +38026,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276274265}
-  m_LocalRotation: {x: 0.19062722, y: 0.49011508, z: -0.110788554, w: 0.84331155}
-  m_LocalPosition: {x: 36.117695, y: 1.47, z: 46.7268}
+  m_LocalRotation: {x: 0.13931496, y: 0.023738982, z: -0.0033397416, w: 0.9899579}
+  m_LocalPosition: {x: 4.378798, y: 2.4312284, z: 0.6381259}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48408,8 +48414,8 @@ GameObject:
   - component: {fileID: 1640203430}
   - component: {fileID: 1640203429}
   - component: {fileID: 1640203428}
-  - component: {fileID: 1640203432}
   - component: {fileID: 1640203431}
+  - component: {fileID: 1640203432}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -48525,11 +48531,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9847228ab5cea9347b301dedd9c0ad30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultTrack: {fileID: 1640203432}
-  suspenseTrack: {fileID: 1640203431}
+  defaultTrack: {fileID: 1640203431}
+  suspenseTrack: {fileID: 1640203432}
   fightTrack: {fileID: 1640203428}
   player: {fileID: 803449927}
-  supplyStore: {fileID: 1101946797}
+  supplyStore: {fileID: 355398447}
 --- !u!4 &1640203430
 Transform:
   m_ObjectHideFlags: 0
@@ -48538,7 +48544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1640203427}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.42050266, y: -5.4226317, z: -6.407834}
+  m_LocalPosition: {x: -1.12, y: 2.22, z: 8.66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
