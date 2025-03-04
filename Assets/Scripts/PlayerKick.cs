@@ -7,7 +7,7 @@ public class PlayerKick : MonoBehaviour
     public Animator animator;
     public float kickForce = 10f;
     public float kickRadius = 1.5f;
-    public LayerMask kickableLayer;
+    public LayerMask kickable;
 
     void Update()
     {
@@ -23,7 +23,7 @@ public class PlayerKick : MonoBehaviour
         //animator.SetInteger("KickType", randomKick);
         animator.SetTrigger("Kick");
 
-        Collider[] hitObjects = Physics.OverlapSphere(transform.position + transform.forward, kickRadius, kickableLayer);
+        Collider[] hitObjects = Physics.OverlapSphere(transform.position + transform.forward, kickRadius, kickable);
 
         foreach (Collider hit in hitObjects)
         {
