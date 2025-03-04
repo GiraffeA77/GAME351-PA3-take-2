@@ -19416,6 +19416,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Explosion: {fileID: 4259482443637622621, guid: d4a71b94e3decba42af14455a4d671d1,
     type: 3}
+  debrisPrefab: {fileID: 1056188262598134, guid: 6c46190a04ac36045bab57473e2bb033,
+    type: 3}
 --- !u!1001 &714944575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38068,8 +38070,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276274265}
-  m_LocalRotation: {x: 0.13931496, y: 0.023738982, z: -0.0033397416, w: 0.9899579}
-  m_LocalPosition: {x: 4.378798, y: 2.4312284, z: 0.6381259}
+  m_LocalRotation: {x: -0.030953778, y: 0.95982563, z: -0.11746417, w: -0.25294045}
+  m_LocalPosition: {x: 7.2255306, y: 2.2222724, z: 12.648809}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40328,6 +40330,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Explosion: {fileID: 4259482443637622621, guid: d4a71b94e3decba42af14455a4d671d1,
+    type: 3}
+  debrisPrefab: {fileID: 1056188262598134, guid: 6c46190a04ac36045bab57473e2bb033,
     type: 3}
 --- !u!1001 &1370630835
 PrefabInstance:
@@ -44162,6 +44166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Explosion: {fileID: 4259482443637622621, guid: d4a71b94e3decba42af14455a4d671d1,
+    type: 3}
+  debrisPrefab: {fileID: 1056188262598134, guid: 6c46190a04ac36045bab57473e2bb033,
     type: 3}
 --- !u!1001 &1492785008
 PrefabInstance:
