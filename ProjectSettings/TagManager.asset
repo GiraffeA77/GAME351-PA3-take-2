@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dynamite
   - Bandit
+  - Bullet
   layers:
   - Default
   - TransparentFX
