@@ -11,6 +11,19 @@ public class PlayerShooting : MonoBehaviour
     public float fireRate = 1f;
     private float nextFireTime = 0f;
     private bool isAiming = false;
+    public AudioClip gunshotSound; // Assign gunshot sound in Inspector
+    private AudioSource audioSource; // Reference to play the sound
+
+    void Start()
+    {
+        // Configure AudioSource
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.clip = gunshotSound;
+        audioSource.spatialBlend = 1.0f; // Fully 3D sound
+        audioSource.playOnAwake = false;
+    }
+
+
 
     void Update()
     {
@@ -42,6 +55,10 @@ public class PlayerShooting : MonoBehaviour
 
     void Shoot()
     {
+        // Play gunshot sound
+        audioSource.Play();
+
+        // Instantiate bullet and apply velocity
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         if (rb != null)
@@ -49,4 +66,5 @@ public class PlayerShooting : MonoBehaviour
             rb.velocity = firePoint.forward * bulletSpeed;
         }
     }
+
 }
