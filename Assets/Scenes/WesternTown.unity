@@ -29062,7 +29062,9 @@ MonoBehaviour:
     m_Bits: 0
   shootingSound: {fileID: 8300000, guid: 03530521776a5e14595948c2240f589f, type: 3}
   audioSource: {fileID: 995164641}
-  muzzleFlashEffect: {fileID: 0}
+  muzzleFlashEffect: {fileID: 5455859967362923075, guid: b43926e9fed968d4f83b5c1925d1fc6a,
+    type: 3}
+  animator: {fileID: 995164640}
 --- !u!114 &995164639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29077,6 +29079,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTrigger: Die
   destroyAfterAnimation: 2
+--- !u!95 &995164640 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95082879787689830, guid: e3d9a5b7a19f9684d9b63308cdfa95bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 796705210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &995164641
 AudioSource:
   m_ObjectHideFlags: 0
@@ -42171,7 +42179,9 @@ MonoBehaviour:
     m_Bits: 0
   shootingSound: {fileID: 8300000, guid: c9f2c259619689c4e9afc0cea0fbb2db, type: 3}
   audioSource: {fileID: 1415182540}
-  muzzleFlashEffect: {fileID: 0}
+  muzzleFlashEffect: {fileID: 5455859967362923075, guid: b43926e9fed968d4f83b5c1925d1fc6a,
+    type: 3}
+  animator: {fileID: 1415182539}
 --- !u!114 &1415182538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42186,6 +42196,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTrigger: Die
   destroyAfterAnimation: 2
+--- !u!95 &1415182539 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95511887735396104, guid: 24362449162558a49bc6904c0fda923a,
+    type: 3}
+  m_PrefabInstance: {fileID: 908960309}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1415182540
 AudioSource:
   m_ObjectHideFlags: 0
@@ -67590,7 +67606,9 @@ MonoBehaviour:
     m_Bits: 0
   shootingSound: {fileID: 8300000, guid: a7b0362a889ddcf4ca86dbfe7e750df2, type: 3}
   audioSource: {fileID: 1851541416}
-  muzzleFlashEffect: {fileID: 0}
+  muzzleFlashEffect: {fileID: 5455859967362923075, guid: b43926e9fed968d4f83b5c1925d1fc6a,
+    type: 3}
+  animator: {fileID: 1851541415}
 --- !u!114 &1851541414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67605,6 +67623,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTrigger: Die
   destroyAfterAnimation: 2
+--- !u!95 &1851541415 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95060489484656484, guid: e85f10072d335224984d9b8ae2e93843,
+    type: 3}
+  m_PrefabInstance: {fileID: 428631127}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &1851541416
 AudioSource:
   m_ObjectHideFlags: 0
@@ -69967,7 +69991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4457282994381246, guid: 15a550206f811c346b37f3a3f4495178, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73195,7 +73219,9 @@ MonoBehaviour:
     m_Bits: 0
   shootingSound: {fileID: 8300000, guid: 84dc3f662983afa4db1120ea8cfb271c, type: 3}
   audioSource: {fileID: 2033694763}
-  muzzleFlashEffect: {fileID: 0}
+  muzzleFlashEffect: {fileID: 5455859967362923075, guid: b43926e9fed968d4f83b5c1925d1fc6a,
+    type: 3}
+  animator: {fileID: 2033694762}
 --- !u!114 &2033694761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73210,6 +73236,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTrigger: Die
   destroyAfterAnimation: 2
+--- !u!95 &2033694762 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95217205003396926, guid: e169e4d9dbd157b498e582065a5f9302,
+    type: 3}
+  m_PrefabInstance: {fileID: 1783898844}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &2033694763
 AudioSource:
   m_ObjectHideFlags: 0

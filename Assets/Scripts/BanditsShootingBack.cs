@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BanditsShootingBack : MonoBehaviour
 {
-       public GameObject bulletPrefab;
+    public GameObject bulletPrefab;
     public Transform firePoint;
     public Transform player;
     public float bulletSpeed = 15f;
@@ -16,6 +16,7 @@ public class BanditsShootingBack : MonoBehaviour
     public AudioClip shootingSound;
     public AudioSource audioSource;
     public GameObject muzzleFlashEffect;
+    public Animator animator; // Reference to the Animator component
 
     private float nextFireTime = 0f;
 
@@ -66,5 +67,12 @@ public class BanditsShootingBack : MonoBehaviour
             GameObject flash = Instantiate(muzzleFlashEffect, firePoint.position, firePoint.rotation);
             Destroy(flash, 1f); // Destroy effect after 1 second
         }
+
+        // Play shooting animation
+        if (animator != null)
+        {
+            animator.SetTrigger("Shoot");
+        }
     }
 }
+
