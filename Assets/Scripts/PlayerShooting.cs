@@ -23,8 +23,6 @@ public class PlayerShooting : MonoBehaviour
         audioSource.playOnAwake = false;
     }
 
-
-
     void Update()
     {
         // Check if "Ctrl" key is pressed to enter aiming mode
@@ -58,13 +56,14 @@ public class PlayerShooting : MonoBehaviour
         // Play gunshot sound
         audioSource.Play();
 
-        // Instantiate bullet and apply velocity
+        // Instantiate bullet at firePoint position and rotation
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.velocity = firePoint.forward * bulletSpeed;
+            // Apply velocity in the player's forward direction
+            rb.velocity = transform.forward * bulletSpeed;
         }
     }
-
 }
+
