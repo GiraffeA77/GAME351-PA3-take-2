@@ -11,6 +11,9 @@ public class SoundManager : MonoBehaviour
     public GameObject player;
     public GameObject supplyStore;
 
+    private float shootingTimer;
+    private float shootingCooldown = 10f; // Adjust cooldown duration as needed
+
     void Update()
     {
         if (PlayerNearSupplyStore())
@@ -19,6 +22,12 @@ public class SoundManager : MonoBehaviour
         }
         else if (PlayerIsShooting())
         {
+            PlayTrack(fightTrack);
+            shootingTimer = shootingCooldown; // Reset the shooting timer
+        }
+        else if (shootingTimer > 0)
+        {
+            shootingTimer -= Time.deltaTime;
             PlayTrack(fightTrack);
         }
         else
@@ -36,7 +45,7 @@ public class SoundManager : MonoBehaviour
     private bool PlayerIsShooting()
     {
         // Add logic to detect player shooting
-        return Input.GetMouseButton(0); // Example for left-click shooting
+        return Input.GetKeyDown(KeyCode.F); // Example for left-click shooting
     }
 
     private void PlayTrack(AudioSource trackToPlay)
