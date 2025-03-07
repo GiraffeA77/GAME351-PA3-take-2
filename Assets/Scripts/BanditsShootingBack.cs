@@ -17,6 +17,7 @@ public class BanditsShootingBack : MonoBehaviour
     public AudioSource audioSource;
     public GameObject muzzleFlashEffect;
     public Animator animator; // Reference to the Animator component
+    public float shootingAngleThreshold = 45f; // Angle threshold for shooting
 
     private float nextFireTime = 0f;
 
@@ -36,6 +37,10 @@ public class BanditsShootingBack : MonoBehaviour
         Vector3 directionToPlayer = (player.position - firePoint.position).normalized;
         Quaternion randomRotation = Quaternion.Euler(0, Random.Range(minInaccuracyAngle, maxInaccuracyAngle), 0);
         Vector3 inaccurateDirection = randomRotation * directionToPlayer;
+
+        // Check if the player is in front of the bandit
+        float angleToPlayer = Vector3.Angle(transform.forward, directionToPlayer);
+        if (angleToPlayer > shootingAngleThreshold) return;
 
         // Check if there is an obstacle between the bandit and the player
         if (Physics.Raycast(firePoint.position, inaccurateDirection, out RaycastHit hit, Mathf.Infinity, obstacleLayer))
@@ -75,4 +80,3 @@ public class BanditsShootingBack : MonoBehaviour
         }
     }
 }
-
