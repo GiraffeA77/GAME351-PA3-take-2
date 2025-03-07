@@ -37,3 +37,4 @@ public class DeathAnimation : MonoBehaviour
         Destroy(gameObject);
     }
 }
+

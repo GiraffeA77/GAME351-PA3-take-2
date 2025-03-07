@@ -29,9 +29,9 @@ public class Bullet : MonoBehaviour
             {
                 banditAnimator.SetTrigger("Die");
             }
-            Destroy(collision.gameObject, 1f);
         }
 
         Destroy(gameObject);
     }
 }
+
