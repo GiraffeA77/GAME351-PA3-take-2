@@ -40,7 +40,7 @@ public class BanditTaunts : MonoBehaviour
         // Check if any other bandits are currently playing a taunt
         foreach (var bandit in otherBandits)
         {
-            if (bandit.banditSource.isPlaying)
+            if (bandit != null && bandit.banditSource.isPlaying)
             {
                 return true;
             }
@@ -58,6 +58,15 @@ public class BanditTaunts : MonoBehaviour
             banditSource.Play();
         }
     }
+
+    public void RemoveBanditFromList(BanditTaunts bandit)
+    {
+        if (otherBandits.Contains(bandit))
+        {
+            otherBandits.Remove(bandit);
+        }
+    }
 }
+
 
 

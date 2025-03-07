@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18145958, g: 0.22709076, b: 0.30739304, a: 1}
+  m_IndirectSpecularColor: {r: 0.18146001, g: 0.22709143, b: 0.3073942, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -32451,6 +32451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTrigger: Die
   destroyAfterAnimation: 2
+  deathAudioClip: {fileID: 8300000, guid: 9994d5d7df42c634383c59a8fd7d7421, type: 3}
 --- !u!95 &995164640 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95082879787689830, guid: e3d9a5b7a19f9684d9b63308cdfa95bd,
@@ -42111,7 +42112,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 39.8
+  field of view: 40
   orthographic: 0
   orthographic size: 20.53
   m_Depth: -1
@@ -42136,8 +42137,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276274265}
-  m_LocalRotation: {x: 0.13931496, y: 0.023738982, z: -0.0033397416, w: 0.9899579}
-  m_LocalPosition: {x: 4.378798, y: 2.4312284, z: 0.6381259}
+  m_LocalRotation: {x: -0.16983823, y: -0.7550626, z: 0.21533145, w: -0.59554005}
+  m_LocalPosition: {x: -28.7056, y: 15.645099, z: 37.530334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45699,6 +45700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTrigger: Die
   destroyAfterAnimation: 2
+  deathAudioClip: {fileID: 8300000, guid: fa5bf05bc9ec4d34daac4ca6beb254b4, type: 3}
 --- !u!95 &1415182539 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95511887735396104, guid: 24362449162558a49bc6904c0fda923a,
@@ -72381,6 +72383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTrigger: Die
   destroyAfterAnimation: 2
+  deathAudioClip: {fileID: 8300000, guid: d3f0364ce8ec69644a8786bc8a5ee202, type: 3}
 --- !u!95 &1851541415 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95060489484656484, guid: e85f10072d335224984d9b8ae2e93843,
@@ -79245,6 +79248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathTrigger: Die
   destroyAfterAnimation: 2
+  deathAudioClip: {fileID: 8300000, guid: ef6bec3934b88ec418fbeffcf118e793, type: 3}
 --- !u!95 &2033694762 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95217205003396926, guid: e169e4d9dbd157b498e582065a5f9302,
