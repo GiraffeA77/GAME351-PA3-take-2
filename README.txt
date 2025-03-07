@@ -31,6 +31,7 @@ Matthew Rust
 - implemented explosion to the dynamite barrels.
 - added rigidbodies to barrels, buckets, tumbleweeds and crates (Note: the props around the player are the only props I can confirm I did this too.  I tried to go around and do it for all the props but I gave up midway through because I was having difficulty finding everything in the heirarchy.)  
 - added background music and implemented script to change it accordingly.
+- created a Bandit wandering script (this did not end up getting implemented due to the fact the result just looked weird, especially when the bandits wandered up onto porches and into biuldings.)
 
 Connor Hubble
 
