@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     public GameObject explosionEffect;
     public GameObject debrisPrefab;
     public float bulletLifetime = 5f;
+    public float damage = 10f;
 
     void Start()
     {
@@ -31,7 +32,18 @@ public class Bullet : MonoBehaviour
             }
         }
 
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
+
         Destroy(gameObject);
     }
 }
+
 

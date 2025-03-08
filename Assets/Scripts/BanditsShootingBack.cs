@@ -18,6 +18,7 @@ public class BanditsShootingBack : MonoBehaviour
     public GameObject muzzleFlashEffect;
     public Animator animator; // Reference to the Animator component
     public float shootingAngleThreshold = 45f; // Angle threshold for shooting
+    public float bulletDamage = 10f;
 
     private float nextFireTime = 0f;
 
