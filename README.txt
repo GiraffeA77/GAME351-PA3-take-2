@@ -26,11 +26,15 @@ Matthew Rust
 - implemented kicking mechanic and animation
 - added audio to rain and thunder (would've added it to lightening as well be the scene became obnoxiusly loud when I did that so I scrapped the idea.)
 - added bandit taunts and death animation to each bandit
-- added shooting aanimation to sheriff and bandits
+- added shooting animation to sheriff and bandits
 - created explosion particle effect
 - implemented explosion to the dynamite barrels.
 - added rigidbodies to barrels, buckets, tumbleweeds and crates (Note: the props around the player are the only props I can confirm I did this too.  I tried to go around and do it for all the props but I gave up midway through because I was having difficulty finding everything in the heirarchy.)  
 - added background music and implemented script to change it accordingly.
+- added health bar UI
+- wrote player health script
+- added audio for player getting hit
+- implemented player health system
 - created a Bandit wandering script (this did not end up getting implemented due to the fact the result just looked weird, especially when the bandits wandered up onto porches and into biuldings.)
 
 Connor Hubble
@@ -64,4 +68,4 @@ Key Mappings:
 - D - right
 - F - Shoot
 - space - kick
-- (holding) left ctrl - freeze animation (NOTE: this was just used for early testing, ideally shouldn't be needed in the completed project.)
+- (hold) left ctrl - freeze Sheriff animation (NOTE: this was just used for early testing, ideally shouldn't be needed in the completed project.)
