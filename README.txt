@@ -69,3 +69,12 @@ Key Mappings:
 - F - Shoot
 - space - kick
 - (hold) left ctrl - freeze Sheriff animation (NOTE: this was just used for early testing, ideally shouldn't be needed in the completed project.)
+
+References -
+EASY Rain Particle in Unity (Particle System Tutorial)
+https://www.youtube.com/watch?v=SrWrUN56UWU 
+made monsoon rain
+
+Lightning 
+https://www.youtube.com/watch?v=5zec4nUewgk
+https://www.youtube.com/watch?v=IahWKsxXzx0
