@@ -1,10 +1,10 @@
-using system.Collections;
-using system.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 
 public class CameraChange : MonoBehaviour {
-    public gameObject FirstCam;
+    public GameObject FirstCam;
     public GameObject ThirdCam;
     public int CamMode;
 
@@ -16,17 +16,18 @@ public class CameraChange : MonoBehaviour {
             CamMode += 1;
         }
         StartCoroutine (CamChange());
-    }
-
-    IEnumerator CamChange(){
-        yield return new WaitForSeconds(0.01f);
-        if (CamMode == 0) {
-            FirstCam.SetActive(false);
-            ThirdCam.SetActive(true);
         }
-        if (CamMode == 1){
-            FirstCam.SetActive(true);
-            ThirdCam.SetActive(false);
+
+        IEnumerator CamChange(){
+            yield return new WaitForSeconds(0.01f);
+            if (CamMode == 0) {
+                FirstCam.SetActive(false);
+                ThirdCam.SetActive(true);
+            }
+            if (CamMode == 1){
+                FirstCam.SetActive(true);
+                ThirdCam.SetActive(false);
+            }
         }
     }
 }
