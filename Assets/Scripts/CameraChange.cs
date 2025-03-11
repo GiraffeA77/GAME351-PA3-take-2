@@ -2,34 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class CameraChange : MonoBehaviour {
     public GameObject FirstCam;
     public GameObject ThirdCam;
-    public int CamMode;
+    private bool isFirstPerson = true;
 
-    void update(){
-        if(input.GetButtonDown ("Camera")) {
-            if (CamMode == 1) {
-                CamMode == 0;
-        } else {
-            CamMode += 1;
-        }
-        StartCoroutine (CamChange());
+    void Update() {
+        if (Input.GetKeyDown(KeyCode.T)) {
+            isFirstPerson = !isFirstPerson;
+            if (isFirstPerson) {
+                ActivateFirstPersonCamera();
+            } else {
+                ActivateThirdPersonCamera();
+            }
         }
 
-        IEnumerator CamChange(){
-            yield return new WaitForSeconds(0.01f);
-            if (CamMode == 0) {
-                FirstCam.SetActive(false);
-                ThirdCam.SetActive(true);
-            }
-            if (CamMode == 1){
-                FirstCam.SetActive(true);
-                ThirdCam.SetActive(false);
-            }
+        if (Input.GetKeyDown(KeyCode.R)) {
+            isFirstPerson = true;
+            ActivateFirstPersonCamera();
         }
     }
+
+    void ActivateFirstPersonCamera() {
+        FirstCam.SetActive(true);
+        ThirdCam.SetActive(false);
+    }
+
+    void ActivateThirdPersonCamera() {
+        FirstCam.SetActive(false);
+        ThirdCam.SetActive(true);
+    }
 }
-
-
