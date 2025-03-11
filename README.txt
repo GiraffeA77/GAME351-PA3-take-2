@@ -36,6 +36,7 @@ Matthew Rust
 - added audio for player getting hit
 - implemented player health system
 - created a Bandit wandering script (this did not end up getting implemented due to the fact the result just looked weird, especially when the bandits wandered up onto porches and into buildings.)
+- implemented camera toggle
 
 Connor Hubble
 - wrote script for 1st to 3rd person camera change 
@@ -52,7 +53,7 @@ Samiur Rahman
 Choice elements implemented:
 - Bandits Shoot back
 - Monsoon Weather
-- 1st to thrid person camera toggle
+- 1st to third person camera toggle
 
 Process of Installation:
 Step 1. Unzip the file and put the resulting folder somewhere on your computer.
@@ -63,6 +64,8 @@ Step 5. Once open and loaded, press play and enjoy.
 
 Known Errata (assuming that means issues):
 - transition between shooting and walking animations is not that smooth
+- unable to implement the cutscene cancel
+- cutscene resets whenever camera is toggled to 3rd-person
 
 Key Mappings:
 - W - forward
