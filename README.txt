@@ -75,6 +75,8 @@ Key Mappings:
 - F - Shoot
 - space - kick
 - (hold) left ctrl - freeze Sheriff animation (NOTE: this was just used for early testing, ideally shouldn't be needed in the completed project.)
+- T - switch between first and third person view
+- R - reset to third person view
 
 References -
 EASY Rain Particle in Unity (Particle System Tutorial)
